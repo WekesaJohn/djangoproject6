@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jacaranda</title>
+    {% load static %}
+    <style>
+        .a{
+            display: flex;
+            background-color: darkorchid;
+            margin-right: 950px;
+            margin-bottom: 40px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            padding-left: 20px;
+            width: auto;
+            height: auto;
+
+        }
+        .e{
+
+        }
+        .i{
+            margin-top: 50px;
+
+        }
+    </style>
+</head>
+<body>
+<a href="{% url 'make' %}">makepurchase</a>
+<a href="{% url 'cat' %}">Cat</a>
+<a href="{% url 'TEXTON' %}">TEXTON</a>
+<div class="a">
+    <div class="e">
+        <img src="{% static 'image/jaca.jpeg' %}" alt="">
+    </div>
+    <div class="i">
+        <p style="width: 150px"><b>Spring is the season when life`s alive in everything.</b></p>
+
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>billing details</title>
+    <style>
+        .hn{
+            display: flex;
+
+
+        }
+        .bb{
+            border-radius: 3%;
+            background-color: #a13ef1;
+            padding-right: 4px;
+            padding-left: 5px;
+            padding-top: 6px;
+            padding-left: 7px;
+            margin-right:10px;
+            margin-left: 20px;
+
+
+
+        }
+        .gg{
+            border-radius: 3%;
+            background-color: #ce27ce;
+             padding-right: 4px;
+            padding-left: 5px;
+            padding-top: 6px;
+            padding-left: 7px;
+             margin-right:45px;
+            margin-left: 5px;
+            width: 10%;
+            height: 5%;
+
+
+        }
+        .no{
+            background-color: #691f69;
+
+        }
+    </style>
+</head>
+<body>
+<div class="no">
+<a href="{% url 'Jacaranda' %}">Jacaranda</a>
+<a href="{% url 'cat' %}">Cat</a>
+<a href="{% url 'TEXTON' %}">TEXTON</a>
+    </div>
+<div class="hn">
+    <div class="bb">
+        <h2>Billing details</h2>
+<form action="">
+    <label for="frstname"></label>
+    <input type="text" id="frstname" placeholder="Firstname">
+
+    <label for="lstname"></label>
+    <input type="text" id="lstname" placeholder="Lastname"><br><br>
+
+    <label for="cmp"></label>
+    <input type="text" id="cmp" placeholder="Company Name"><br><br>
+
+    <label for="address"></label>
+    <input type="text" id="address" placeholder="Address"><br><br>
+
+    <label for="email"></label>
+    <input type="email" id="email" placeholder="Email"><br><br>
+
+    <label for="plc"></label>
+    <input type="text" id="plc" placeholder="Place"><br><br>
+
+    <label for="add"></label>
+    <textarea name="" id="" cols="20" rows="5" placeholder="Additional Information"></textarea><br><br>
+    <input type="checkbox" style="text-align: center">Creat an Account?
+</form>
+        </div>
+
+    <div class="gg">
+        <h2>Summary</h2><hr>
+        <p>Products   $53.98</p><br>
+        <p>Shipping    Gratis</p> <br><hr>
+        <p><b>Total Amount  $ 53.98</b></p>
+        <p><b>(include VAT)</b></p>
+        <button style="background-color: #0e61dc">Make Purchase</button>
+    </div>
+    </div>
+</body>
+</html>
